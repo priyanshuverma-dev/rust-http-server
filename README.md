@@ -20,10 +20,16 @@ This project is a build of a web server in Rust on bare minimum from scratch wit
    daytona create <SAMPLE_REPO_URL> 
    ```  
 
-4. **Start the Application**:  
+3. **Build Application**:  
    ```bash  
    cargo build
+   ``` 
+
+4. **Start the Application**:  
+   ```bash  
+   cargo run
    ```  
+   Running on `http://localhost:5000`
 
 ---
 
