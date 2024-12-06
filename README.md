@@ -1,9 +1,3 @@
-This repository contains a README file sample for Daytona Samples and the MIT License.
-
-It can be used as a template to create sample repositories that can be added into [Daytona](https://github.com/daytonaio/daytona).
-
-Once you finish your sample and it gets merged, you can open a PR in the Daytona repo and submit the sample into the [index file](https://github.com/daytonaio/daytona/blob/main/hack/samples/index.json).
-
 # Rust Http Server
 
 This project is a build of a web server in Rust on bare minimum from scratch with only `std::TCPListener`. This is only a fun project to learn rust.
@@ -14,18 +8,24 @@ This project is a build of a web server in Rust on bare minimum from scratch wit
 
 ### Open Using Daytona  
 
-1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
+1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/). Make sure that you have a `provider` installed.
 2. **Create the Workspace**:  
    ```bash  
-   daytona create <SAMPLE_REPO_URL> 
-   ```  
+   daytona create https://github.com/priyanshuverma-dev/rust-http-server.git 
+   ```
+   You should get something like: `{"outcome":"success","result":"done"}`
+3. **Open Workplace in you IDE**
+   ```bash
+   daytona code
+   ```
+   select your project that you. created recently. it will open in default editor.
 
-3. **Build Application**:  
+4. **Build Application**:  
    ```bash  
    cargo build
    ``` 
 
-4. **Start the Application**:  
+5. **Start the Application**:  
    ```bash  
    cargo run
    ```  
